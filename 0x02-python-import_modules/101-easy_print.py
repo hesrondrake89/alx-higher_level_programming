@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-#pythoniscool
+101-easy_print.py
