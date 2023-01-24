@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-"""Define a class Square."""
-class Square:
-    """Represent a square."""
+""" alx python tasks """
+
+
+class Square():
+    """Empty class"""
+    pass
