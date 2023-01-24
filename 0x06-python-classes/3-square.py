@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class Square alx task"""
+"""class Square"""
 
 
 class Square:
