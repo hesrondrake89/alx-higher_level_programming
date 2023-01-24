@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define a class Square."""
+"""Defining a class Square alx task"""
 
 class Square:
     """Represent a square."""
