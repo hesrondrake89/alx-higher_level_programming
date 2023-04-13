@@ -5,6 +5,5 @@ const newList = list.map(function (num, index) {
   return num * index;
 });
 
-
 consoe.log(list);
 console.log(newList);
