@@ -1,8 +1,8 @@
 #!/usr/bin/node
-class Rectangle {
-  constructor (w, h) {
-    this.width = w;
-    this.height = h;
+cclass Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
   }
 }
 
