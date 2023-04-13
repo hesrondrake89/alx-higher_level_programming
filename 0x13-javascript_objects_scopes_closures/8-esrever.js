@@ -1,14 +1,13 @@
 #!/usr/bin/node
-function reverseList(list) {
-  let left = 0;
-  let right = list.length - 1;
-  while (left < right) {
-    const temp = list[left];
-    list[left] = list[right];
-    list[right] = temp;
-    left++;
-    right--;
+exports.esrever = function (list) {
+  let len = list.length - 1;
+  let i = 0;
+  while ((len - i) > 0) {
+    const aux = list[len];
+    list[len] = list[i];
+    list[i] = aux;
+    i++;
+    len--;
   }
   return list;
-}
-exports.esrever = reverseList;
+};
