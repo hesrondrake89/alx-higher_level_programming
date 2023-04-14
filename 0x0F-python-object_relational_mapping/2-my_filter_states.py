@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Retrieves all values from the states table in 
-a database where the name column matches the provided argument
+Rolls out all the values in the states tables of a database where name
+matches the argument
 """
 import sys
 import MySQLdb
