@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Lists all states with a name starting with N
+List all the states with the alphabet starting with N
 """
 import sys
 import MySQLdb
