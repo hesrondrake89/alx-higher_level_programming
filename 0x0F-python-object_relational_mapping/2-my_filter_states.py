@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Lists all values in the states tables of a database where name
-matches the argument
+Retrieves all values from the states table in a database where the name column matches the provided argument
 """
 import sys
 import MySQLdb
