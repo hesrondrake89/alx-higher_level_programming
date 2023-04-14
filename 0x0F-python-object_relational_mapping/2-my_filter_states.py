@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Rolls out all the values in the states tables of a database where name
+Lists all the values in the states tables of a database where name
 matches the argument
 """
 import sys
