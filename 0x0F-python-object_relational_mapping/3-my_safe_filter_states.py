@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Safely retrieves all values from the states table in a database where the name column matches the provided argument
+Safely retrieves all values from the states table 
+in a database where the name column matches the provided argument
 """
 import sys
 import MySQLdb
