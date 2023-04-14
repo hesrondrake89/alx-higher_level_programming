@@ -1,29 +1,17 @@
 #!/usr/bin/python3
 """
-List all states from the database hbtn_0e_0_usa
+List all the states from the database hbtn_0e_0_usa
 """
-import argparse
+import sys
 import MySQLdb
 
-def list_states(user, password, database):
-    try:
-        db = MySQLdb.connect(user=user, passwd=password, db=database, port=3306)
-    except MySQLdb.Error as e:
-        print(f"Error connecting to database: {e}")
-        return
-    
+if __name__ == '__main__':
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2],
+                         db=sys.argv[3], port=3306)
+
     cur = db.cursor()
-    cur.execute("SELECT name FROM states;")
+    cur.execute("SELECT * FROM states;")
     states = cur.fetchall()
 
     for state in states:
-        print(state[0])
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='List all states from a database.')
-    parser.add_argument('user', help='Database username.')
-    parser.add_argument('password', help='Database password.')
-    parser.add_argument('database', help='Database name.')
-    args = parser.parse_args()
-
-    list_states(args.user, args.password, args.database)
+        print(state)
