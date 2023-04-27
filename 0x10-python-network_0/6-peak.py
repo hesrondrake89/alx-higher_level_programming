@@ -16,7 +16,6 @@ def find_peak(lst):
     """
     if not lst:
         return None
-    
     lo, hi = 0, len(lst) - 1
     while lo < hi:
         mid = (lo + hi) // 2
@@ -24,5 +23,4 @@ def find_peak(lst):
             lo = mid + 1
         else:
             hi = mid
-            
     return lst[lo]
