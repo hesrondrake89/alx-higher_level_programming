@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-""" post email """
+"""
+This script sends an email address to a specified URL using a POST request.
+"""
 import requests
 import sys
 
-
-if __name__ == "__main__":
-    email = {'email': sys.argv[2]}
-    r = requests.post(sys.argv[1], data=email)
-    print(r.text)
+if name == "main":
+email = {'email': sys.argv[2]}
+response = requests.post(sys.argv[1], data=email)
+print(response.text)
