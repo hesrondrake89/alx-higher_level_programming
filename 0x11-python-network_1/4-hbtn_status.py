@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This Python script fetches a URL using the requests package.
+This Python script 
+- fetches a URL using the requests package.
 """
 import requests
 
