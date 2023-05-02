@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-This Python script 
-- fetches a URL using the requests package.
-"""
+"""Fetches https://alx-intranet.hbtn.io/status."""
 import requests
 
 if __name__ == "__main__":
