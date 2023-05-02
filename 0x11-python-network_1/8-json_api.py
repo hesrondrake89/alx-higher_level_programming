@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""Sends a POST request to http://0.0.0.0:5000/search_user with a given letter.
-Usage: ./8-json_api.py <letter>
-  - The letter sent as the value of the variable `q`.
-  - If no letter is provided, sends `q=""`.
+"""Uses the GitHub API to display a GitHub ID based on given credentials.
+Usage: ./10-my_github.py <GitHub username> <GitHub password>
+  - Uses Basic Authentication to access the ID.
 """
 
 import sys
