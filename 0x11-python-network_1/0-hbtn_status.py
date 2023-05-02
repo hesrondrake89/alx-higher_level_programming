@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-"""
-This script fetches 
-- the https://alx-intranet.hbtn.io/status URL using the urllib Python package.
-- It then reads the content of the response and prints out its type, content, and UTF-8 decoded content.
-"""
-
+"""Fetches https://alx-intranet.hbtn.io/status."""
 
 if __name__ == '__main__':
     import urllib.request
