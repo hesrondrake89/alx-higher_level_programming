@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+"""Displays the X-Request-Id header variable of a request to a given URL.
+Usage: ./1-hbtn_header.py <URL>
 """
-This script takes a URL as input, sends a request to the URL, and displays the value of the X-Request-Id variable found in the response header.
-"""
+
 import sys
 import urllib.request
 
