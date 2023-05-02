@@ -6,17 +6,11 @@ Usage: ./10-my_github.py <GitHub username> <GitHub password>
 
 import sys
 import requests
+from requests.auth import HTTPBasicAuth
+
+
 
 if __name__ == "__main__":
-    letter = "" if len(sys.argv) == 1 else sys.argv[1]
-    payload = {"q": letter}
-
-    r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
-    try:
-        response = r.json()
-        if response == {}:
-            print("No result")
-        else:
-            print("[{}] {}".format(response.get("id"), response.get("name")))
-    except ValueError:
-        print("Not a valid JSON")
+    auth = HTTPBasicAuth(sys.argv[1], sys.argv[2])
+    r = requests.get("https://api.github.com/user", auth=auth)
+    print(r.json().get("id"))
