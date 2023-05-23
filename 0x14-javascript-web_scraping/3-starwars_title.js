@@ -2,8 +2,8 @@
 
 const request = require('request');
 
-const apiUrl = process.argv[2];
-const characterId = 18;
+const filmId = process.argv[2];
+const apiUrl = `http://swapi.co/api/films/${filmId}`;
 
 request(apiUrl, function (error, response, body) {
   if (error) {
@@ -11,8 +11,7 @@ request(apiUrl, function (error, response, body) {
   } else if (response.statusCode !== 200) {
     console.error('Status:', response.statusCode);
   } else {
-    const films = JSON.parse(body).results;
-    const moviesWithWedge = films.filter(film => film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`));
-    console.log(`Number of movies with Wedge Antilles: ${moviesWithWedge.length}`);
+    const filmTitle = JSON.parse(body).title;
+    console.log(filmTitle);
   }
 });
